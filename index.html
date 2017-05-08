@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>index</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    </body>
-</html>
 
-<?
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+</body>
+<script>
+<? 
 require_once("functions.php");
 
 session_start();
@@ -24,10 +23,13 @@ if ($_SESSION['authenticated'] != true) {
 print_html_header2("Home");
 echo' <h2>Home</h2>';
 echo'
-	<div class="alert alert-info" role="alert">
-		<p> Welcome to Trivia <Strong>'.$_SESSION['username'].'</Strong>! <a href="trivia.php">Play trivia</a> to earn points which you can redeem for nothing!</p>
-	</div>
-	';
+	'<div class="alert alert-info" role="alert">
+		'<p> Welcome to Trivia </p>
+	'</div>';
 	
 print_html_footer2();
 ?>
+
+</script>
+
+</html>
