@@ -11,25 +11,5 @@
 
 <body>
 </body>
-<script>
-<? 
-require_once("functions.php");
-
-session_start();
-if ($_SESSION['authenticated'] != true) {
-  die("Access denied");	
-}
-	
-print_html_header2("Home");
-echo' <h2>Home</h2>';
-echo'
-	'<div class="alert alert-info" role="alert">
-		'<p> Welcome to Trivia </p>
-	'</div>';
-	
-print_html_footer2();
-?>
-
-</script>
-
+<script type="text/javascript" src="JS/JS.js"> </script>
 </html>
